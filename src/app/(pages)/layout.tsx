@@ -1,3 +1,4 @@
+import PageNavbar from "@/components/nav/page-navbar";
 import "../globals.css";
 import type { Metadata } from "next";
 
@@ -13,7 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-background">{children}</body>
+      <body className="bg-background">
+        <PageNavbar />
+        <main className="flex min-h-screen flex-col px-36 bg-background py-4">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

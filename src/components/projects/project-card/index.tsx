@@ -4,10 +4,13 @@ import { PropsWithChildren } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function ProjectCard(
   props: PropsWithChildren<{
     link?: string;
+    pageUrl: string;
     name: string;
     tags?: string[];
     imageSrc?: string;
@@ -16,6 +19,8 @@ export default function ProjectCard(
     period?: string;
   }>
 ) {
+  const router = useRouter();
+
   return (
     <motion.div
       className="w-full rounded-xl back-card p-[1px] overflow-hidden h-[80vh] max-h-[800px]"
@@ -29,8 +34,9 @@ export default function ProjectCard(
         cursor: "pointer",
       }}
       transition={{ duration: 0.5 }}
+      onClick={() => router.push(props.pageUrl)}
     >
-      <div className="w-full h-full rounded-xl flex flex-col items-center main-card ">
+      <div className="w-full h-full rounded-xl flex flex-col items-center main-card">
         <motion.div className="absolute w-full rounded-xl h-full project-color z-0 opacity-0"></motion.div>
         <div className="flex w-full justify-between p-10 pb-0 items-start z-10">
           <div className="flex flex-col gap-[4px]">

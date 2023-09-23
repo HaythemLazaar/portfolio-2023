@@ -15,31 +15,38 @@ export default function Navbar() {
         <h1 className="font-heading font-light text-lg">Haythem Lazaar</h1>
       </div>
       <div className="flex gap-8">
-        <Link href="/">
+        <Link href="/work">
           <p className="font-par font-extralight">Work</p>
         </Link>
-        <Link href="/">
+        <Link href="/contact">
           <p className="font-par font-extralight">Contact</p>
         </Link>
-        <Link href="/">
+        <Link href="" target="_blank">
           <div className="flex items-center gap-1">
             <p className="font-par font-extralight">Resume</p>
             <FiArrowUpRight />
           </div>
         </Link>
         <div className="flex items-center gap-1">
-          <Image
-            src="/TwitterX.svg"
-            width={26}
-            height={26}
-            alt="Haythem's X profile"
-          />
-          <Image
-            src="/LinkedIn.svg"
-            width={26}
-            height={26}
-            alt="Haythem's LinkedIn profile"
-          />
+          <Link href="https://twitter.com/HaythemLaz" target="_blank">
+            <Image
+              src="/TwitterX.svg"
+              width={26}
+              height={26}
+              alt="Haythem's X profile"
+            />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/haythem-lazaar/"
+            target="_blank"
+          >
+            <Image
+              src="/LinkedIn.svg"
+              width={26}
+              height={26}
+              alt="Haythem's LinkedIn profile"
+            />
+          </Link>
         </div>
       </div>
     </nav>

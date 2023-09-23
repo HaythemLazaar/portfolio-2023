@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
-import Navbar from "@/components/navbar";
+import About from "@/components/about";
+import Navbar from "@/components/nav/home-navbar";
 import Projects from "@/components/projects";
 import Image from "next/image";
 
@@ -23,9 +24,10 @@ export default function Home() {
         />
       </div>
       <Navbar />
-      <main className="flex min-h-screen flex-col px-36 bg-background py-20 ">
+      <main className="flex min-h-screen flex-col px-36 bg-background py-20 pt-10">
         <Hero />
         <Projects />
+        <About />© Haythem Lazaar 2023
       </main>
     </>
   );

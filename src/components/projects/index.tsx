@@ -1,4 +1,4 @@
-import ProjectCard from "../project-card";
+import ProjectCard from "./project-card";
 import Image from "next/image";
 
 export default function Projects() {
@@ -12,6 +12,7 @@ export default function Projects() {
         imageAlt="Scheduling App"
         description="Online & In-Person Appointment Scheduling App."
         period="Freelance, '23"
+        pageUrl="/scheduling-app"
       />
       <ProjectCard
         name="Magistin: GPR"
@@ -20,6 +21,7 @@ export default function Projects() {
         imageAlt="Inventory Management App"
         description="Vehicles, Inventory  & Human ressources Management for Public & Private Corporate Entreprises."
         period="Xtensus, '23"
+        pageUrl="/magistin-gpr"
       />
 
       <ProjectCard
@@ -30,6 +32,7 @@ export default function Projects() {
         imageAlt="Project Management App"
         description="Project Management, Communication & Collaboration Platform. Allowing remote teams to work at maximum productivity."
         period="Esprit, '23"
+        pageUrl="/collo"
       />
     </div>
   );

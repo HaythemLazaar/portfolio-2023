@@ -15,6 +15,10 @@ const config: Config = {
       card: "#222222",
     },
     extend: {
+      screens: {
+        "3xl": "1600px",
+        // => @media (min-width: 1440px) { ... }
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

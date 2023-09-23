@@ -26,8 +26,41 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+hr {
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    #cf776163 50%,
+    transparent 100%
+  );
+  border: none;
+  height: 1px;
+}
+
+nav {
+  background: linear-gradient(180deg, #050505 -80%, rgba(0, 0, 0, 0) 100%);
+}
+
 .gradient-heading {
-  background: linear-gradient(90deg, #cf7761 31.99%, #bebebe 69.5%);
+  background: linear-gradient(90deg, #cf7761 0.99%, #bebebe 49.5%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-heading-small {
+  background: linear-gradient(90deg, #cf7761 40.99%, #bebebe 113.5%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-heading-faded {
+  background: linear-gradient(
+    92deg,
+    #bebebe 1.03%,
+    rgba(190, 190, 190, 0) 136.7%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -65,4 +98,29 @@ body {
 .back-card:hover > .main-card > div > .project-img {
   scale: 0.95;
   transition: all 0.5s ease-in-out;
+}
+
+.bento-card-bg {
+  padding: 1px;
+  background: linear-gradient(142deg, #bebebe -40.32%, #050505 61.31%);
+  border-radius: 16px;
+}
+
+.bento-card {
+  background: radial-gradient(
+      146.43% 100% at 49.92% 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(204, 225, 255, 0.2) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(187, 206, 233, 0.1) 84.64%
+    ),
+    #222;
+}
+
+.img-shadow {
+  box-shadow: 0px -20px 10px 60px #232323 inset,
+    20px -20px 40px 30px #242526 inset, -20px 20px 40px 60px #232323 inset;
 }
