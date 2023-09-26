@@ -6,7 +6,7 @@ export default function AboutCard(
   props: PropsWithChildren<{ title: string; text?: string }>
 ) {
   return (
-    <motion.div className="py-48">
+    <motion.div className="py-48 z-20">
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{

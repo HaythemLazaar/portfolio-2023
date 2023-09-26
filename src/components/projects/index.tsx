@@ -17,7 +17,7 @@ export default function Projects() {
       <ProjectCard
         name="Magistin: GPR"
         tags={["web app", "redesign"]}
-        imageSrc="/gpr1.svg"
+        imageSrc="/gpr2.svg"
         imageAlt="Inventory Management App"
         description="Vehicles, Inventory  & Human ressources Management for Public & Private Corporate Entreprises."
         period="Xtensus, '23"
@@ -28,7 +28,7 @@ export default function Projects() {
         name="Collo"
         tags={["web app", "personal Project"]}
         link="https://www.collo.app"
-        imageSrc="/collo1.svg"
+        imageSrc="/collo2.svg"
         imageAlt="Project Management App"
         description="Project Management, Communication & Collaboration Platform. Allowing remote teams to work at maximum productivity."
         period="Esprit, '23"

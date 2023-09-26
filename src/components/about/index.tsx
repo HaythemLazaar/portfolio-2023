@@ -6,13 +6,15 @@ import Image from "next/image";
 export default function About() {
   return (
     <div>
-      {/* <Image
-        src="/profile.png"
-        className="sticky top-[30%] left-[100%] shadow-inner"
-        width={600}
-        height={600}
-        alt="Haythem Lazaar"
-      /> */}
+      <div className="sticky top-10 flex justify-end items-center w-full ">
+        <Image
+          src="/profile.png"
+          className="z-0 opacity-10"
+          width={600}
+          height={600}
+          alt="Haythem Lazaar"
+        />
+      </div>
       <AboutCard
         title="Methodology"
         text="I build web apps that align with the product goals & with target

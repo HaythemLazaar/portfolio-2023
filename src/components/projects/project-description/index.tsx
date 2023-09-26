@@ -18,20 +18,20 @@ export default function ProjectDescription(props: {
     <>
       {/* sticky top-[130px] */}
       <div className=" bg-background">
-        <h1 className="text-[white] font-light font-heading 3xl:text-6xl md:text-4xl ">
+        <h1 className="text-[white] font-light font-heading 3xl:text-5xl md:text-4xl ">
           <span className="text-brand font-black">{props.title}</span>
         </h1>
-        <div className="flex w-full justify-between items-end">
-          <h1 className="text-[white] font-light font-heading 3xl:text-6xl md:text-4xl ">
+        <div className="flex w-full justify-between items-end pt-1">
+          <h1 className="text-[white] font-light font-heading 3xl:text-4xl md:text-3xl opacity-90">
             {props.subtitle}
           </h1>
           {props.link ? (
             <ProjectLink title={props.title} link={props.link} />
           ) : null}
         </div>
-
-        <Divider />
       </div>
+      <Divider />
+
       <div
         className="flex gap-40 3xl:text-[20px] md:text-[16px]
     "

@@ -16,7 +16,7 @@ const config: Config = {
     },
     extend: {
       screens: {
-        "3xl": "1600px",
+        "3xl": "1800px",
         // => @media (min-width: 1440px) { ... }
       },
       backgroundImage: {

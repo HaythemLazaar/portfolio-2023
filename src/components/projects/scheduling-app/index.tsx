@@ -12,10 +12,10 @@ export default function SchedulingApp() {
     "Mobile-public-schedule-timeslots",
   ];
   const largeScreens = [
-    "L-bookings-page",
+    "L-sign-in-page",
     "L-availabilty-list",
-    "L-availability-edit",
     "L-availabilty-new",
+    "L-availability-edit",
     "L-profile-settings",
     "L-report-page",
   ];
@@ -56,7 +56,7 @@ export default function SchedulingApp() {
             width={2000}
             height={1000}
             alt={screen}
-            className="rounded-lg"
+            className="rounded-lg bg-[#F2F7FF]"
           />
         ))}
       </div>
