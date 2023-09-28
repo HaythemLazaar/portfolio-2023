@@ -14,14 +14,11 @@ export default function Navbar() {
         />
         <h1 className="font-heading font-light text-lg">Haythem Lazaar</h1>
       </div>
-      <div className="flex gap-8">
-        <Link href="/work">
-          <p className="font-par font-extralight">Work</p>
-        </Link>
+      <div className="flex gap-10">
         <Link href="/contact">
-          <p className="font-par font-extralight">Contact</p>
+          <p className="font-par font-extralight">Reach Out</p>
         </Link>
-        <Link href="" target="_blank">
+        <Link href="resume.pdf" target="_blank">
           <div className="flex items-center gap-1">
             <p className="font-par font-extralight">Resume</p>
             <FiArrowUpRight />

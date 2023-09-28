@@ -1,5 +1,4 @@
 import PageNavbar from "@/components/nav/page-navbar";
-import "../globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,13 +12,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-background">
-        <PageNavbar />
-        <main className="flex min-h-screen flex-col px-36 bg-background py-4">
-          {children}
-        </main>
-      </body>
-    </html>
+    <>
+      <PageNavbar />
+      <main className="flex min-h-screen flex-col px-36 bg-background py-4">
+        {children}
+      </main>
+    </>
   );
 }

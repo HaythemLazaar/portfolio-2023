@@ -23,7 +23,7 @@ export default function ProjectCard(
 
   return (
     <motion.div
-      className="w-full rounded-xl back-card p-[1px] overflow-hidden h-[80vh] max-h-[800px]"
+      className="w-full rounded-xl back-card p-[2px] overflow-hidden h-[80vh] max-h-[800px]"
       initial={{ opacity: 0 }}
       whileInView={{
         opacity: 1,
@@ -53,17 +53,17 @@ export default function ProjectCard(
           </div>
 
           {props.link ? (
-            <Link href={props.link} target="_blank">
-              <motion.div
-                initial={{ borderBottom: "none" }}
-                whileHover={{ borderBottom: "1px solid white" }}
-                transition={{ duration: 1 }}
-                className="flex gap-2 items-center justify-end text-text project-link"
-              >
+            <motion.div
+              initial={{ color: "#BEBEBE" }}
+              whileHover={{ color: "#CF7761" }}
+              transition={{ duration: 0.5 }}
+              className="flex gap-2 items-center justify-end text-text project-link"
+            >
+              <Link href={props.link} target="_blank">
                 {props.name}
-                <FiArrowUpRight />{" "}
-              </motion.div>
-            </Link>
+              </Link>
+              <FiArrowUpRight />{" "}
+            </motion.div>
           ) : null}
         </div>
         <div className="w-full px-20 pt-12">

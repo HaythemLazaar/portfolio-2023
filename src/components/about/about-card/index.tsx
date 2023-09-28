@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 import { PropsWithChildren } from "react";
 
 export default function AboutCard(
-  props: PropsWithChildren<{ title: string; text?: string }>
+  props: PropsWithChildren<{ title: string; text?: string; style?: string }>
 ) {
   return (
-    <motion.div className="py-48 z-20">
+    <motion.div
+      className={`relative z-20 h-[80vh] flex flex-col justify-center ${props.style}`}
+    >
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{

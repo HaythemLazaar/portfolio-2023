@@ -1,7 +1,9 @@
 import "./globals.css";
+import "tailwindcss/tailwind.css";
 import type { Metadata } from "next";
 import { Lexend_Deca } from "next/font/google";
 import localFont from "next/font/local";
+import Footer from "@/components/footer";
 
 const lexend = Lexend_Deca({
   subsets: ["latin"],
@@ -27,7 +29,12 @@ export default function RootLayout({
       lang="en"
       className={`${unbounded.variable} font-heading ${lexend.variable} font-par`}
     >
-      <body>{children}</body>
+      <body>
+        {children}{" "}
+        <footer>
+          <Footer />
+        </footer>
+      </body>
     </html>
   );
 }
