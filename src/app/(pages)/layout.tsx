@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: `Haythem Lazaar`,
   description: "Work portfolio",
+  icons: "/icon.png",
 };
 
 export default function RootLayout({
