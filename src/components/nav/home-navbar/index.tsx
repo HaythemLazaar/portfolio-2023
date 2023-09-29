@@ -14,13 +14,15 @@ export default function Navbar() {
         />
         <h1 className="font-heading font-light text-lg">Haythem Lazaar</h1>
       </div>
-      <div className="flex gap-10">
+      <div className="flex gap-10 items-center">
         <Link href="/contact">
-          <p className="font-par font-extralight">Reach Out</p>
+          <p className="font-par font-extralight transition-all hover:text-brand hover:font-light">
+            Reach Out
+          </p>
         </Link>
         <Link href="resume.pdf" target="_blank">
-          <div className="flex items-center gap-1">
-            <p className="font-par font-extralight">Resume</p>
+          <div className="flex items-center gap-1 hover:gap-2 transition-all hover:text-brand ">
+            <p className="font-par font-extralight hover:font-light">Resume</p>
             <FiArrowUpRight />
           </div>
         </Link>
@@ -31,6 +33,7 @@ export default function Navbar() {
               width={26}
               height={26}
               alt="Haythem's X profile"
+              className="hover:w-8 transition-all"
             />
           </Link>
           <Link
@@ -42,6 +45,7 @@ export default function Navbar() {
               width={26}
               height={26}
               alt="Haythem's LinkedIn profile"
+              className="hover:w-8 transition-all"
             />
           </Link>
         </div>

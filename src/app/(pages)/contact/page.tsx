@@ -1,7 +1,11 @@
-export default function Contact() {
+"use client";
+import Contact from "@/components/contact";
+import { motion } from "framer-motion";
+
+export default function ContactPage() {
   return (
-    <div>
-      <h1 className="gradient-heading font-black text-8xl ">Contact</h1>
+    <div className="relative">
+      <Contact style="max-w-[1200px]" />
     </div>
   );
 }

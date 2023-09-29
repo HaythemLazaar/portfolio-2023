@@ -53,17 +53,12 @@ export default function ProjectCard(
           </div>
 
           {props.link ? (
-            <motion.div
-              initial={{ color: "#BEBEBE" }}
-              whileHover={{ color: "#CF7761" }}
-              transition={{ duration: 0.5 }}
-              className="flex gap-2 items-center justify-end text-text project-link"
-            >
+            <div className="flex gap-2 items-center justify-end text-text project-link hover:gap-3 hover:text-brand transition-all">
               <Link href={props.link} target="_blank">
                 {props.name}
               </Link>
               <FiArrowUpRight />{" "}
-            </motion.div>
+            </div>
           ) : null}
         </div>
         <div className="w-full px-20 pt-12">

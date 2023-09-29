@@ -29,7 +29,7 @@ export default function RootLayout({
       lang="en"
       className={`${unbounded.variable} font-heading ${lexend.variable} font-par`}
     >
-      <body>
+      <body className="bg-background">
         {children}{" "}
         <footer>
           <Footer />

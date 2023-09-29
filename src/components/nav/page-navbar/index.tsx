@@ -8,7 +8,12 @@ export default function PageNavbar() {
   return (
     <nav className="flex justify-between py-10 px-24 sticky top-0 z-50">
       <Link href="/">
-        <motion.button className="border border-brand bg-background px-8 py-3 rounded-3xl font-light flex items-center gap-4">
+        <motion.button
+          initial={{ background: "#020202" }}
+          whileHover={{ background: "#cf7761" }}
+          transition={{ type: "tween", duration: 0.5 }}
+          className="border border-brand bg-background px-8 py-3 rounded-3xl font-light flex items-center gap-4"
+        >
           <FiArrowLeft /> Back
         </motion.button>
       </Link>

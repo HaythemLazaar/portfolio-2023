@@ -26,11 +26,11 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-hr {
+.gradient-hr {
   background: linear-gradient(
     to left,
     transparent 0%,
-    #cf776163 50%,
+    #cf776162 50%,
     transparent 100%
   );
   border: none;

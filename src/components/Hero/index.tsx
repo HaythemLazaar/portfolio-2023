@@ -32,7 +32,7 @@ export default function Hero() {
         for early-stage teams
       </h1>
       <div className="flex gap-5 py-10 z-20">
-        <Link href="">
+        <Link href="/contact">
           {" "}
           <motion.button
             initial={{ scale: 1, background: "#cf7761" }}
@@ -68,7 +68,7 @@ export default function Hero() {
   );
 }
 
-const LineSVG = () => {
+export const LineSVG = () => {
   return (
     <motion.svg
       width="800"
@@ -85,7 +85,7 @@ const LineSVG = () => {
           delay: 1,
           repeat: Infinity,
           repeatType: "reverse",
-          repeatDelay: 1,
+          repeatDelay: 3,
         }}
         d="M776 31.7788C718 87.7788 524.001 -71.2213 397.5 55.279C270.999 181.779 333 196.954 299 175.954C265 154.954 267.73 117.683 242.476 136.954C222.141 152.472 242.476 181.954 242.476 202.454C242.476 222.954 226.195 158.735 187.976 196.954C149.756 235.174 117.976 248.454 61.9756 254.954C5.97563 261.454 -11.5244 202.454 21.9756 175.954C55.4756 149.454 152.976 148.954 149.976 248.454C146.976 347.954 149.976 353.454 149.976 353.454"
         stroke="#CF7761"
