@@ -25,7 +25,7 @@ export default function Home() {
         />
       </div>
       <Navbar />
-      <main className="flex min-h-screen flex-col px-36 bg-background">
+      <main className="flex min-h-screen flex-col px-10 md:px-20 lg:px-36 bg-background">
         <Hero />
         <Projects />
         <About />

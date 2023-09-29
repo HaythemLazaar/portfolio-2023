@@ -9,16 +9,16 @@ export default function Contact(props: { style?: string }) {
   const [formSubmit, setFormSubmit] = useState(false);
   return (
     <div className={props.style}>
-      <div className="absolute top-10 right-[-164px]">
+      <div className="absolute top-64 sm:top-44 md:top-10 right-[-564px] lg:right-[-164px]">
         <YoSVG />
       </div>
-      <div className={`py-16 relative`}>
+      <div className={`py-7 s:py-10 lg:py-16 relative`}>
         {/* <InternBadge /> */}
         <motion.h1
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="gradient-heading text-8xl font-black font-heading max-w-[1400px] leading-tight z-10"
+          className="gradient-heading text-4xl lg:text-6xl 3xl:text-8xl font-black font-heading max-w-[1400px] leading-tight z-10 pb-4 lg:pb-0"
         >
           Leave a message
         </motion.h1>
@@ -26,14 +26,14 @@ export default function Contact(props: { style?: string }) {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="text-text text-3xl font-light font-par max-w-[1400px] leading-tight pb-20"
+          className="text-text text-lg lg:text-xl 3xl:text-3xl font-light font-par max-w-[1400px] leading-tight pb-10 3xl:pb-20"
         >
           If you{`'`}re looking for a hire, a project quote or just to connect.
           <br />
           <span className="text-brand">Make sure to hit me up!</span>
         </motion.h1>
         <form action={sendEmail}>
-          <div className="flex gap-5 w-full">
+          <div className="flex flex-col lg:flex-row gap-2 lg:gap-5 w-full">
             <div className="flex flex-col gap-2 w-full py-3">
               <label
                 className="text-text font-light text-[16px]"

@@ -16,8 +16,8 @@ export default function ContactCard() {
       }}
       transition={{ duration: 0.5 }}
     >
-      <div className="relative w-full h-full rounded-xl flex flex-col main-card pl-20">
-        <Contact style="max-w-[1200px]" />
+      <div className="relative w-full h-full rounded-xl flex flex-col main-card px-7 md:px-10 lg:pr-0 lg:pl-20 ">
+        <Contact style="lg:max-w-[1000px] 3xl:max-w-[1200px]" />
       </div>
     </motion.div>
   );
