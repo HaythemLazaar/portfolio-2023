@@ -23,7 +23,7 @@ export default function ProjectCard(
 
   return (
     <motion.div
-      className="w-full rounded-xl back-card p-[2px] overflow-hidden h-[80vh] max-h-[800px]"
+      className="w-full rounded-xl back-card p-[2px] overflow-hidden lg:h-[80vh] max-h-[800px]"
       initial={{ opacity: 0 }}
       whileInView={{
         opacity: 1,
@@ -38,22 +38,22 @@ export default function ProjectCard(
     >
       <div className="w-full h-full rounded-xl flex flex-col items-center main-card">
         <motion.div className="absolute w-full rounded-xl h-full project-color z-0 opacity-0"></motion.div>
-        <div className="flex w-full justify-between p-10 pb-0 items-start z-10">
-          <div className="flex flex-col gap-[4px]">
-            <h1 className="text-4xl font-black text-transparent font-heading text-[white]">
+        <div className="flex w-full justify-between p-6 lg:p-10 pb-0 items-start z-10">
+          <div className="flex flex-col gap-4 lg:gap-[4px]">
+            <h1 className="text-xl lg:text-4xl font-black text-transparent font-heading text-[white]">
               {props.name}
             </h1>
-            <h1 className="text-xl font-light font-par text-text flex items-start gap-4 ">
-              <span className="inline-block text-xl font-light text-text min-w-max">
+            <h1 className="text-base lg:text-xl font-regular lg:font-light font-par text-text flex flex-col md:flex-row items-start gap-1 lg:gap-4">
+              <span className="inline-block text-base lg:text-xl font-extralight lg:font-light text-text min-w-max">
                 {props.period}
               </span>{" "}
-              <span className="inline-block w-2 h-2 rounded-xl bg-text mt-[10px]"></span>
+              <span className="hide-small md:inline-block w-2 h-2 rounded-xl bg-text mt-[10px]"></span>
               {props.description}
             </h1>
           </div>
 
           {props.link ? (
-            <div className="flex gap-2 items-center justify-end text-text project-link hover:gap-3 hover:text-brand transition-all">
+            <div className="hide-small sm:flex gap-2 items-center justify-end text-text project-link hover:gap-3 hover:text-brand transition-all">
               <Link href={props.link} target="_blank">
                 {props.name}
               </Link>
@@ -61,7 +61,7 @@ export default function ProjectCard(
             </div>
           ) : null}
         </div>
-        <div className="w-full px-20 pt-12">
+        <div className="w-full px-4 lg:px-20 pt-12">
           {props.imageSrc && props.imageAlt ? (
             <Image
               src={props.imageSrc!}

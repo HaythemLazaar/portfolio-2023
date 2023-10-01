@@ -15,7 +15,7 @@ export default function AboutCard(
           opacity: 1,
         }}
         transition={{ duration: 0.5 }}
-        className="gradient-heading-faded font-heading font-black text-2xl pb-10 w-fit"
+        className="gradient-heading-faded font-heading font-black text-lg lg:text-2xl pb-10 w-fit"
       >
         {props.title}
       </motion.h1>
@@ -26,7 +26,7 @@ export default function AboutCard(
             opacity: 1,
           }}
           transition={{ duration: 1.5 }}
-          className="gradient-heading text-5xl font-bold font-heading max-w-[1400px] leading-tight"
+          className="gradient-heading text-xl lg:text-5xl font-bold font-heading max-w-[1400px] leading-normal m:leading-tight"
         >
           {props.text}
         </motion.h1>

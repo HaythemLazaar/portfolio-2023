@@ -18,11 +18,11 @@ export default function ProjectDescription(props: {
     <>
       {/* sticky top-[130px] */}
       <div className=" bg-background">
-        <h1 className="text-[white] font-light font-heading 3xl:text-5xl md:text-4xl ">
+        <h1 className="text-[white] font-light font-heading text-2xl 3xl:text-5xl md:text-4xl ">
           <span className="text-brand font-black">{props.title}</span>
         </h1>
-        <div className="flex w-full justify-between items-end pt-1">
-          <h1 className="text-[white] font-light font-heading 3xl:text-4xl md:text-3xl opacity-90">
+        <div className="flex flex-col lg:flex-row w-full justify-between gap-10 lg:gap-0 lg:items-end pt-1">
+          <h1 className="text-[white] font-light font-heading text-lg 3xl:text-4xl md:text-3xl opacity-80">
             {props.subtitle}
           </h1>
           {props.link ? (
@@ -33,7 +33,7 @@ export default function ProjectDescription(props: {
       <Divider />
 
       <div
-        className="flex gap-40 3xl:text-[20px] md:text-[16px]
+        className="flex flex-col lg:flex-row gap-4 lg:gap-40 3xl:text-[20px] md:text-[16px]
     "
       >
         <div className="flex flex-col gap-4 justify-evenly">

@@ -22,7 +22,7 @@ export default function ProjectSchedulingPage() {
       <Divider />
 
       <div className="w-full flex flex-col items-center">
-        <div className="rounded-xl overflow-hidden flex justify-center items-center">
+        <div className="lg:rounded-xl overflow-hidden flex justify-center items-center">
           <Image
             src="/bookbyqr2.svg"
             width={2000}

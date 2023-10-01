@@ -10,8 +10,8 @@ import EmailBadge from "./email-badge";
 export default function Hero() {
   const [isBtnHover, setIsBtnHover] = useState(false);
   return (
-    <motion.div className="z-20 lg:pt-16 3xl:pt-28 relative">
-      <div className="absolute lg:bottom-[-200px] 3xl:bottom-[-260px] lg:right-[-240px] 3xl:right-[-180px] z-0">
+    <motion.div className="z-20 pb-20 lg:pb-0 lg:h-auto lg:pt-16 3xl:pt-28 relative">
+      <div className="absolute bottom-[-160px] right-[-350px] lg:bottom-[-200px] 3xl:bottom-[-260px] lg:right-[-240px] 3xl:right-[-180px] z-0">
         <LineSVG />
       </div>
       <div className="flex flex-col gap-3 py-8 ">
@@ -19,7 +19,7 @@ export default function Hero() {
         <InternBadge />
       </div>
 
-      <h1 className="font-heading font-black max-w-8xl lg:text-7xl 3xl:text-8xl text-text z-30">
+      <h1 className="relative font-heading font-semibold lg:font-black md:max-w-8xl text-4xl sm:text-5xl lg:text-7xl 3xl:text-8xl text-text z-30">
         <span
           className="gradient-heading-small"
           style={{
@@ -31,14 +31,14 @@ export default function Hero() {
         <br />
         for early-stage teams
       </h1>
-      <div className="flex gap-5 py-10 z-20">
+      <div className="flex  gap-5 py-10 z-20 w-fit relative">
         <Link href="/contact">
           {" "}
           <motion.button
             initial={{ scale: 1, background: "#cf7761" }}
             whileHover={{ scale: 1, background: "#D7CDCB" }}
             transition={{ type: "tween", duration: 0.5 }}
-            className="bg-brand px-8 py-3 rounded-3xl font-light text-[black] flex gap-3 items-center"
+            className="bg-brand px-6 sm:px-8 py-3 rounded-3xl font-light text-[black] flex gap-3 items-center justify-center text-sm sm:text-base"
           >
             <div className="w-2 h-2 rounded-full bg-[green]" />
             Reach Out
@@ -51,14 +51,16 @@ export default function Hero() {
             onMouseLeave={() => setIsBtnHover(false)}
             className="border border-brand  rounded-3xl font-light overflow-hidden"
           >
-            <div className="flex items-center gap-1 relative pr-8 py-3">
+            <div className="flex items-center gap-1 relative pr-6 sm:pr-8 py-3">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: isBtnHover ? 1 : 0 }}
                 transition={{ type: "tween", duration: 0.5 }}
                 className="w-full h-full bg-brand absolute z-0"
               ></motion.div>
-              <p className="pl-8 font-par font-extralight z-10">View Resume</p>
+              <p className="pl-6 sm:pl-8 font-par font-extralight z-10 text-sm sm:text-base">
+                View Resume
+              </p>
               <FiArrowUpRight className="text-[20px] z-10" />
             </div>
           </motion.button>

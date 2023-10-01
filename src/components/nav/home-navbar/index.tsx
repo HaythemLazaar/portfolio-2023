@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex items-center py-10 px-24 justify-between sticky top-0 z-50">
+    <nav className="w-full flex items-center py-8 md:py-10 px-5 sm:px-10 lg:px-24 justify-between sticky top-0 z-50">
       <div className="flex gap-5 items-center">
         <Image
           src="/icon.png"
@@ -14,7 +14,7 @@ export default function Navbar() {
         />
         <h1 className="font-heading font-light text-lg">Haythem Lazaar</h1>
       </div>
-      <div className="flex gap-10 items-center">
+      <div className="hide-small lg:flex gap-10 items-center">
         <Link href="/contact">
           <p className="font-par font-extralight transition-all hover:text-brand hover:font-light">
             Reach Out

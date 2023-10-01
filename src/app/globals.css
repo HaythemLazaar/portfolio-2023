@@ -36,6 +36,9 @@ body {
   border: none;
   height: 1px;
 }
+.hide-small {
+  display: none;
+}
 
 nav {
   background: linear-gradient(180deg, #050505 -80%, rgba(0, 0, 0, 0) 100%);
@@ -103,7 +106,6 @@ nav {
 .bento-card-bg {
   padding: 1px;
   background: linear-gradient(142deg, #bebebe -40.32%, #050505 61.31%);
-  border-radius: 16px;
 }
 
 .bento-card {

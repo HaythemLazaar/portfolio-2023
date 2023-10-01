@@ -3,7 +3,7 @@ import { FiAlertCircle } from "react-icons/fi";
 
 export default function InternBadge() {
   return (
-    <div className="py-1 px-2 rounded-3xl bg-badge flex gap-2 w-fit items-center relative overflow-hidden">
+    <div className="hide-small py-1 px-2 rounded-3xl bg-badge sm:flex gap-2 w-fit items-center relative overflow-hidden">
       <FiAlertCircle style={{ color: "black" }} className="z-10 bg-badge" />
       <motion.p
         initial={{ x: -600 }}
@@ -11,9 +11,10 @@ export default function InternBadge() {
         transition={{
           duration: 6,
           repeat: Infinity,
+          repeatDelay: 5,
           delay: 3,
         }}
-        className="text-[black] font-light"
+        className="text-[black] font-light text-sm md:text-base w-max"
       >
         Currently looking for a 6-month end-of-studies internship.
       </motion.p>
@@ -23,9 +24,10 @@ export default function InternBadge() {
         transition={{
           duration: 6,
           repeat: Infinity,
+          repeatDelay: 5,
           delay: 3,
         }}
-        className="text-[black] font-light absolute w-max"
+        className="text-[black] font-light absolute w-max text-sm md:text-base"
       >
         Currently looking for a 6-month end-of-studies internship.
       </motion.p>

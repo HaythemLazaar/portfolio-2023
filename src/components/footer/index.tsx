@@ -37,7 +37,7 @@ export default function Footer() {
               height={80}
               width={80}
               alt="Haythem Lazaar Logo"
-              className="h-fit w-[20%] md:w-[80px]"
+              className="hide-small sm:block h-fit w-[20%] md:w-[80px]"
             />
 
             <div className="flex flex-col gap-2 lg:justify-end">
@@ -49,7 +49,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex items-end gap-10 justify-between max-w-[450px] sm:max-w-none px-5">
+        <div className="flex items-end gap-10 justify-between sm:justify-normal max-w-[450px] sm:max-w-none px-5">
           <div className="flex gap-10 ">
             <div className="flex flex-col gap-5 justify-end lg:items-end">
               <Link href="/">
