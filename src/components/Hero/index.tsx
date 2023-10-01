@@ -11,7 +11,7 @@ export default function Hero() {
   const [isBtnHover, setIsBtnHover] = useState(false);
   return (
     <motion.div className="z-20 pb-20 lg:pb-0 lg:h-auto lg:pt-16 3xl:pt-28 relative">
-      <div className="absolute bottom-[-160px] right-[-350px] lg:bottom-[-200px] 3xl:bottom-[-260px] lg:right-[-240px] 3xl:right-[-180px] z-0">
+      <div className="hide-small lg:block absolute bottom-[-160px] right-[-350px] lg:bottom-[-200px] 3xl:bottom-[-260px] lg:right-[-240px] 3xl:right-[-180px] z-0">
         <LineSVG />
       </div>
       <div className="flex flex-col gap-3 py-8 ">

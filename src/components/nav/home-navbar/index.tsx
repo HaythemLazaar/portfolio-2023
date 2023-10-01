@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex items-center py-8 md:py-10 px-5 sm:px-10 lg:px-24 justify-between sticky top-0 z-50">
+    <nav className="sticky top-0 w-full flex lg:items-center py-8 md:py-10 px-5 sm:px-10 lg:px-24 justify-between z-50">
       <div className="flex gap-5 items-center">
         <Image
           src="/icon.png"

@@ -2,14 +2,19 @@
 import nodemailer from "nodemailer";
 import SMTPTransport from "nodemailer/lib/smtp-transport";
 
-export async function sendEmail(formData: FormData) {
+export async function sendEmail(formData: {
+  email: string;
+  subject: string;
+  message: string;
+  submitted: boolean;
+}) {
   try {
     await createEmail({
       to: "haythem.lazaar1@gmail.com",
-      subject: formData.get("subject")?.toString(),
-      text: `Email from: <strong>${formData.get(
-        "email"
-      )}</strong> <br />${formData.get("message")?.toString()}`,
+      subject: formData.subject?.toString(),
+      text: `Email from: <strong>${
+        formData.email
+      }</strong> <br />${formData.message?.toString()}`,
     });
 
     return {

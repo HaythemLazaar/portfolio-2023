@@ -3,13 +3,27 @@ import { motion } from "framer-motion";
 import { BsFillSendFill } from "react-icons/bs";
 import { sendEmail } from "./sendMail";
 import { useState } from "react";
-import InternBadge from "../Hero/intern-badge";
 
 export default function Contact(props: { style?: string }) {
-  const [formSubmit, setFormSubmit] = useState(false);
+  const [formSubmit, setFormSubmit] = useState({
+    email: "",
+    subject: "",
+    message: "",
+    submitted: false,
+  });
+  const handletFormSubmit = () => {
+    if (
+      formSubmit.email != "" &&
+      formSubmit.subject != "" &&
+      formSubmit.message != ""
+    ) {
+      sendEmail(formSubmit);
+      setFormSubmit({ ...formSubmit, submitted: true });
+    }
+  };
   return (
     <div className={props.style}>
-      <div className="absolute top-64 sm:top-44 md:top-10 right-[-564px] lg:right-[-164px]">
+      <div className="hide-small md:block absolute top-64 sm:top-44 md:top-10 right-[-564px] lg:right-[-164px]">
         <YoSVG />
       </div>
       <div className={`py-7 s:py-10 lg:py-16 relative`}>
@@ -32,8 +46,13 @@ export default function Contact(props: { style?: string }) {
           <br />
           <span className="text-brand">Make sure to hit me up!</span>
         </motion.h1>
-        <form action={sendEmail}>
-          <div className="flex flex-col lg:flex-row gap-2 lg:gap-5 w-full">
+        <form>
+          <motion.div
+            initial={{ opacity: 0, width: 0 }}
+            whileInView={{ opacity: 1, width: "100%" }}
+            transition={{ duration: 0.5 }}
+            className="flex flex-col lg:flex-row gap-2 lg:gap-5"
+          >
             <div className="flex flex-col gap-2 w-full py-3">
               <label
                 className="text-text font-light text-[16px]"
@@ -43,7 +62,10 @@ export default function Contact(props: { style?: string }) {
               </label>
               <input
                 required
-                className="rounded-md bg-[#d4d4d4] h-8 py-5 px-3 text-background placeholder-[#78716c] font-light"
+                onChange={(e) =>
+                  setFormSubmit({ ...formSubmit, email: e.target.value })
+                }
+                className="rounded-md bg-[#d4d4d4] h-8 py-5 px-3 text-sm lg:text-base text-background placeholder-[#78716c] font-light"
                 type="email"
                 name="email"
                 placeholder="your-email@example.com"
@@ -58,14 +80,22 @@ export default function Contact(props: { style?: string }) {
               </label>
               <input
                 required
-                className="rounded-md bg-[#d4d4d4] h-8 py-5 px-3 text-background placeholder-[#78716c] font-light"
+                onChange={(e) =>
+                  setFormSubmit({ ...formSubmit, subject: e.target.value })
+                }
+                className="rounded-md bg-[#d4d4d4] h-8 py-5 px-3 text-sm lg:text-base text-background placeholder-[#78716c] font-light"
                 placeholder="Your Subject"
                 type="text"
                 name="subject"
               />
             </div>
-          </div>
-          <div className="flex flex-col gap-2 w-full py-3 pb-10">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, width: 0 }}
+            whileInView={{ opacity: 1, width: "100%" }}
+            transition={{ duration: 0.5 }}
+            className="flex flex-col gap-2 py-3 pb-10"
+          >
             <label
               className="text-text font-light text-[16px]"
               htmlFor="message"
@@ -74,23 +104,27 @@ export default function Contact(props: { style?: string }) {
             </label>
             <textarea
               required
+              onChange={(e) =>
+                setFormSubmit({ ...formSubmit, message: e.target.value })
+              }
               name="message"
               placeholder="Your message"
-              className="rounded-md bg-[#d4d4d4] h-32 p-5 font-light text-background placeholder-[#78716c]"
+              className="rounded-md bg-[#d4d4d4] h-32 py-5 px-3 text-sm lg:text-base font-light text-background placeholder-[#78716c]"
             />
-          </div>
-          {formSubmit ? (
+          </motion.div>
+          {formSubmit.submitted ? (
             <div className="w-full px-8 py-3 border border-brand rounded-md flex gap-3 items-center justify-center text-text">
               Message Sent Succesfully
             </div>
           ) : (
             <motion.button
-              initial={{ scale: 1, background: "#cf7761" }}
-              whileHover={{ scale: 1, background: "#D7CDCB" }}
+              initial={{ width: 0, background: "#cf7761" }}
+              whileInView={{ width: "100%" }}
+              whileHover={{ background: "#D7CDCB" }}
               transition={{ type: "tween", duration: 0.5 }}
               type="submit"
-              className="w-full bg-brand px-8 py-3 rounded-md font-bold text-[black] flex gap-3 items-center justify-center"
-              onClick={() => setFormSubmit(true)}
+              className="bg-brand px-8 py-3 rounded-md font-bold text-[black] flex gap-3 items-center justify-center"
+              onClick={handletFormSubmit}
             >
               <BsFillSendFill />
               Send Message

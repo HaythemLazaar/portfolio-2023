@@ -22,7 +22,7 @@ export default function About() {
           animate={{ opacity: isInView ? 0.5 : 0, scale: isInView ? 1 : 0 }}
           transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
           exit={{ scale: 0, opacity: 0 }}
-          className="sticky top-[72%] ml-24 lg:ml-40 flex justify-end items-center w-full z-[0] h-10"
+          className="hide-small sticky top-[72%] ml-24 lg:ml-40 lg:flex justify-end items-center w-full z-[0] h-10"
         >
           <Image
             src="/profile.png"
