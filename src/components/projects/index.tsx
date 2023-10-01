@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col gap-48 z-20 lg:py-32 3xl:py-48">
+    <div className="flex flex-col gap-20 lg:gap-48 z-20 lg:py-32 3xl:py-48">
       <ProjectCard
         name="BookByQR"
         link="https://bookbyqr-redesign.vercel.app/bookings"

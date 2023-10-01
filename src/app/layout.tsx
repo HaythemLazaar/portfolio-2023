@@ -4,8 +4,6 @@ import type { Metadata } from "next";
 import { Lexend_Deca } from "next/font/google";
 import localFont from "next/font/local";
 import Footer from "@/components/footer";
-import { Suspense } from "react";
-import LoadingUI from "@/components/loading-ui";
 
 const lexend = Lexend_Deca({
   subsets: ["latin"],
@@ -32,12 +30,10 @@ export default function RootLayout({
       className={`${unbounded.variable} font-heading ${lexend.variable} font-par`}
     >
       <body className="bg-background h-auto">
-        <Suspense fallback={<LoadingUI />}>
-          {children}{" "}
-          <footer className="p-2">
-            <Footer />
-          </footer>
-        </Suspense>
+        {children}{" "}
+        <footer className="p-2">
+          <Footer />
+        </footer>
       </body>
     </html>
   );

@@ -23,7 +23,7 @@ export default function ProjectCard(
 
   return (
     <motion.div
-      className="w-full rounded-xl back-card p-[2px] overflow-hidden lg:h-[80vh] max-h-[800px]"
+      className="w-full rounded-xl back-card p-[2px] overflow-hidden lg:h-[80vh] lg:max-h-[800px]"
       initial={{ opacity: 0 }}
       whileInView={{
         opacity: 1,
@@ -61,7 +61,12 @@ export default function ProjectCard(
             </div>
           ) : null}
         </div>
-        <div className="w-full px-4 lg:px-20 pt-12">
+        <motion.div
+          initial={{ paddingTop: "100px" }}
+          whileInView={{ paddingTop: "48px" }}
+          transition={{ duration: 1, type: "tween" }}
+          className="w-full px-4 lg:px-20 max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-none"
+        >
           {props.imageSrc && props.imageAlt ? (
             <Image
               src={props.imageSrc!}
@@ -73,7 +78,7 @@ export default function ProjectCard(
           ) : (
             props.children
           )}{" "}
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

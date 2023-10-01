@@ -1,8 +1,7 @@
 "use client";
 import Link from "next/link";
-import { FiAlertCircle, FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight } from "react-icons/fi";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useState } from "react";
 import InternBadge from "./intern-badge";
 import EmailBadge from "./email-badge";
@@ -10,7 +9,12 @@ import EmailBadge from "./email-badge";
 export default function Hero() {
   const [isBtnHover, setIsBtnHover] = useState(false);
   return (
-    <motion.div className="z-20 pb-20 lg:pb-0 lg:h-auto lg:pt-16 3xl:pt-28 relative">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ type: "tween", duration: 1 }}
+      className="z-20 pb-20 lg:pb-0 lg:h-auto lg:pt-16 3xl:pt-28 relative"
+    >
       <div className="hide-small lg:block absolute bottom-[-160px] right-[-350px] lg:bottom-[-200px] 3xl:bottom-[-260px] lg:right-[-240px] 3xl:right-[-180px] z-0">
         <LineSVG />
       </div>

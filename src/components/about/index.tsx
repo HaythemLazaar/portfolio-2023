@@ -13,7 +13,7 @@ export default function About() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="relative z-10 gradient-heading text-3xl lg:text-8xl font-black font-heading max-w-[1400px] leading-tight py-28"
+        className="hide-small md:inline relative z-10 gradient-heading text-3xl lg:text-8xl font-black font-heading max-w-[1400px] leading-tight pt-44 lg:pt-28 lg:pb-28"
       >
         A little about me
       </motion.h1>
@@ -35,7 +35,7 @@ export default function About() {
         <AboutCard
           title="Methodology"
           text="I build web apps that align with the product goals & with target
-          audience needs while making the design easily comprehensible."
+          audience while making the design easily comprehensible."
         />
 
         <AboutCard title="Education">
@@ -62,7 +62,7 @@ export default function About() {
             </motion.span>
           </h1>
         </AboutCard>
-        <AboutCard title="Vision & Ambitions" style="lg:h-auto lg:pt-80">
+        <AboutCard title="Vision & Ambitions" style="h-auto pt-40 lg:pt-80">
           <motion.h1
             initial={{ opacity: 0 }}
             whileInView={{
