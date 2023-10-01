@@ -1,6 +1,6 @@
 "use client";
-import { GrainyBg } from "@/app/page";
 import Contact from "@/components/contact";
+import { GrainyBg } from "@/components/grainy-bg";
 import { motion } from "framer-motion";
 
 export default function ContactPage() {
