@@ -1,4 +1,5 @@
 import { Divider } from "@/components/divider";
+import ColloApp from "@/components/projects/collo";
 import ProjectDescription from "@/components/projects/project-description";
 import Image from "next/image";
 
@@ -30,6 +31,7 @@ export default function ProjectCollo() {
         </div>
         <Divider />
       </div>
+      <ColloApp />
     </div>
   );
 }
