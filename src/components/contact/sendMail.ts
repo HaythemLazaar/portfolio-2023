@@ -31,13 +31,13 @@ const createEmail = (options: {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "haytoum.lazaar@gmail.com",
-      pass: "didkdcruydzhzxys",
+      user: process.env.user,
+      pass: process.env.pass,
     },
   });
 
   const mailOptions = {
-    from: "haytoum.lazaar@gmail.com",
+    from: process.env.user,
     to: options.to,
     subject: options.subject,
     html: options.text,
