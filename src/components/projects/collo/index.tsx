@@ -27,6 +27,7 @@ export default function ColloApp() {
       <Divider />
       <div className="w-full main-card p-4 lg:p-20 rounded-md lg:rounded-2xl flex flex-col gap-4 lg:gap-20 justify-center items-center">
         {[
+          "L-dash.jpeg",
           "L-kanban.svg",
           "L-members.jpeg",
           "L-meetings.jpeg",
