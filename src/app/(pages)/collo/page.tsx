@@ -11,11 +11,11 @@ export default function ProjectCollo() {
         subtitle="Project Management, Communication & Collaboration Platform."
         role="Product Designer & Software Engineer"
         client="Esprit"
-        duration="60 days"
+        duration="Feb - May, '23"
         summary={[
-          "In this project, I undertook the redesign of an existing app, known as BookByQR, with a primary focus on enhancing its user interface and overall user experience.",
+          "This is a project that I've been working on with my team as a requirement for the school. I had an orchestration role where I have been involved in designing the UI, designing the software and coming up with solutions that meet our business goals. ",
           "The initial phase involved a thorough cleanup of the outdated UI, followed by the creation of a fresh design system that seamlessly incorporated the app's branding elements. ",
-          "Leveraging cutting-edge technologies, I developed the app using Next.js and Chakra UI, ensuring a modern and efficient user interface. ",
+          "Leveraging cutting-edge technologies, we used next.js in a Service-oriented architecture with authentication using NextAuth, a seperate emailing service and a core functionality service in Nest.js along real time video chat using Twilio SDK.",
         ]}
       />
       <Divider />
