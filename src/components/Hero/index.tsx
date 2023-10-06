@@ -39,10 +39,10 @@ export default function Hero() {
         <Link href="/contact">
           {" "}
           <motion.button
-            initial={{ scale: 1, background: "#cf7761" }}
-            whileHover={{ scale: 1, background: "#D7CDCB" }}
+            initial={{ scale: 1, background: "#cf7761", color: "white" }}
+            whileHover={{ scale: 1, background: "#D7CDCB", color: "black" }}
             transition={{ type: "tween", duration: 0.5 }}
-            className="bg-brand px-6 sm:px-8 py-3 rounded-3xl font-light text-[black] flex gap-3 items-center justify-center text-sm sm:text-base"
+            className="bg-brand px-6 sm:px-8 py-3 rounded-3xl font-light flex gap-3 items-center justify-center text-sm sm:text-base"
           >
             <div className="w-2 h-2 rounded-full bg-[green]" />
             Reach Out
