@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
+import { FaSquareXTwitter, FaLinkedin } from "react-icons/fa6";
+import { FaGithubSquare } from "react-icons/fa";
 
 export default function Navbar() {
   return (
@@ -26,26 +28,40 @@ export default function Navbar() {
             <FiArrowUpRight />
           </div>
         </Link>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-2">
+          <Link href="https://github.com/HaythemLazaar" target="_blank">
+            <FaGithubSquare
+              style={{ color: "#D7CDCB" }}
+              className="text-2xl hover:text-4xl transition-all"
+            />
+          </Link>
           <Link href="https://twitter.com/HaythemLaz" target="_blank">
-            <Image
+            {/* <Image
               src="/TwitterX.svg"
               width={26}
               height={26}
               alt="Haythem's X profile"
               className="hover:w-8 transition-all"
+            /> */}
+            <FaSquareXTwitter
+              style={{ color: "#D7CDCB" }}
+              className="text-2xl hover:text-4xl transition-all"
             />
           </Link>
           <Link
             href="https://www.linkedin.com/in/haythem-lazaar/"
             target="_blank"
           >
-            <Image
+            {/* <Image
               src="/LinkedIn.svg"
               width={26}
               height={26}
               alt="Haythem's LinkedIn profile"
               className="hover:w-8 transition-all"
+            /> */}
+            <FaLinkedin
+              style={{ color: "#D7CDCB" }}
+              className="text-2xl hover:text-4xl transition-all"
             />
           </Link>
         </div>
