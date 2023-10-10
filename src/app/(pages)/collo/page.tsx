@@ -18,6 +18,7 @@ export default function ProjectCollo() {
           "Leveraging cutting-edge technologies, we used next.js in a Service-oriented architecture with authentication using NextAuth, a seperate emailing service and a core functionality service in Nest.js along real time video chat using Twilio SDK.",
         ]}
         link="https://www.collo.app"
+        github="https://github.com/colloHQ/collo-app"
       />
       <Divider />
       <div className="w-full flex flex-col items-center">
