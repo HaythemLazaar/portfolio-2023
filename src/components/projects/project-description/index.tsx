@@ -24,7 +24,7 @@ export default function ProjectDescription(props: {
           <span className="text-brand font-black">{props.title} </span>{" "}
           {props.github ? (
             <Link href={props.github} target="_blank">
-              <FaGithub className="text-3xl text-badge hover:text-brand transition-all" />
+              <FaGithub className="text-xl md:text-3xl text-badge hover:text-brand transition-all" />
             </Link>
           ) : null}
         </h1>
