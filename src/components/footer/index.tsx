@@ -53,11 +53,16 @@ export default function Footer() {
           <div className="flex gap-10 ">
             <div className="flex flex-col gap-5 justify-end lg:items-end">
               <Link href="/">
-                <h1 className="text-text font-extralight">Work</h1>
+                <h1 className="text-text font-extralight hover:text-brand transition-all">
+                  Work
+                </h1>
               </Link>
               <Link href="/contact">
-                <h1 className="text-text font-extralight">Reach Out</h1>
+                <h1 className="text-text font-extralight hover:text-brand transition-all">
+                  Contact
+                </h1>
               </Link>
+              <ProjectLink link="resume.pdf" title="Resume" bg="#222" />
               <h1 className="text-xl lg:text-3xl text-[white] font-heading font-black">
                 Main
               </h1>
@@ -67,7 +72,11 @@ export default function Footer() {
           <div className="flex gap-10 ">
             <div className="flex flex-col gap-5 justify-end lg:items-end">
               {/* <h1 className="font-heading text-2xl">Socials</h1> */}
-              <ProjectLink link="resume.pdf" title="Resume" bg="#222" />
+              <ProjectLink
+                link="https://github.com/HaythemLazaar"
+                title="Github"
+                bg="#222"
+              />
               <ProjectLink
                 link="https://www.linkedin.com/in/haythem-lazaar/"
                 title="LinkedIn"
