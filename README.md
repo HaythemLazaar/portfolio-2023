@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project, using [TypeScript](https://github.com/microsoft/TypeScript), [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) & [Framer-motion](https://github.com/framer/motion). 
+# Personal Portfolio
+## This is a [Next.js](https://nextjs.org/) project, using [TypeScript](https://github.com/microsoft/TypeScript), [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) & [Framer-motion](https://github.com/framer/motion). 
+
+<a href="https://haythem-laz.tech" target="_blank"><img src="https://github.com/HaythemLazaar/portfolio-2023/assets/74047809/09858649-37ab-41f7-a48b-63cec24fa142" title="Haythem Lazaar's Website" alt="Haythem Lazaar's Website" /></a> 
+
 
 ## To run the project locally
 First, install the required packages:
