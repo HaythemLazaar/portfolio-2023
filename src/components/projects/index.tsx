@@ -8,7 +8,7 @@ export default function Projects() {
         name="BookByQR"
         link="https://bookbyqr-redesign.vercel.app/bookings"
         tags={["web app", "redesign"]}
-        imageSrc="/bookbyqr2.svg"
+        imageSrc="/bookbyqr2.png"
         imageAlt="Scheduling App"
         description="Online & In-Person Appointment Scheduling App."
         period="Freelance, '23"
@@ -17,7 +17,7 @@ export default function Projects() {
       <ProjectCard
         name="Magistin: GPR"
         tags={["web app", "redesign"]}
-        imageSrc="/gpr2.svg"
+        imageSrc="/gpr2.png"
         imageAlt="Inventory Management App"
         description="Vehicles, Inventory  & Human ressources Management for Public & Private Corporate Entreprises."
         period="Xtensus, '23"
@@ -28,7 +28,7 @@ export default function Projects() {
         name="Collo"
         tags={["web app", "personal Project"]}
         link="https://www.collo.app"
-        imageSrc="/collo2.svg"
+        imageSrc="/collo2.png"
         imageAlt="Project Management App"
         description="Project Management, Communication & Collaboration Platform. Allowing remote teams to work at maximum productivity."
         period="Esprit, '23"
