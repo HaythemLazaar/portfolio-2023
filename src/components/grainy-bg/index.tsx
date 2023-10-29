@@ -8,14 +8,14 @@ export const GrainyBg = () => {
         width={1600}
         height={500}
         alt="ellipse"
-        className="hide-small block absolute left-[-40px] blur-2xl lg:left-0 top-0 md:top-48 lg:top-64 xl:top-32 3xl:top-44 lg:blur-3xl opacity-60"
+        className="hide-small md:block absolute left-[-40px] blur-2xl lg:left-0 top-0 md:top-48 lg:top-64 xl:top-32 3xl:top-44 lg:blur-3xl opacity-60"
       />
       <Image
         src="/Ellipse.svg"
         width={1600}
         height={500}
         alt="ellipse"
-        className="block md:hidden absolute left-0 blur-xl lg:left-[-100px] top-0 md:top-48 lg:top-64 xl:top-32 3xl:top-44 lg:blur-3xl opacity-20"
+        className="block md:hidden absolute left-0 blur-xl lg:left-[-100px] top-0 md:top-48 lg:top-64 xl:top-32 3xl:top-44 lg:blur-3xl opacity-50"
       />
       <Image
         src="/noise.svg"
