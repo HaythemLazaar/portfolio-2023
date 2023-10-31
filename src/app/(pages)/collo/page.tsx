@@ -24,7 +24,7 @@ export default function ProjectCollo() {
       <div className="w-full flex flex-col items-center">
         <div className="rounded-xl overflow-hidden flex justify-center items-center">
           <Image
-            src="/collo2.svg"
+            src="/collo2.png"
             width={2000}
             height={200}
             alt="Project Management App"

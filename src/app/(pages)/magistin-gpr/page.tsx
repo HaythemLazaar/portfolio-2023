@@ -22,7 +22,7 @@ export default function ProjectGPR() {
       <div className="w-full flex flex-col items-center">
         <div className="rounded-xl overflow-hidden flex justify-center items-center">
           <Image
-            src="/gpr2.svg"
+            src="/gpr2.png"
             width={2000}
             height={200}
             alt="Vehicles, Inventory & Human ressources Management for Entreprises."

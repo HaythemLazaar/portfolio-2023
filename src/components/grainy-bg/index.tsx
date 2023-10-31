@@ -23,6 +23,7 @@ export const GrainyBg = () => {
         height={500}
         alt="noise"
         className="relative"
+        priority={true}
       />
       <Image
         src="/noise.svg"

@@ -24,7 +24,7 @@ export default function ProjectSchedulingPage() {
       <div className="w-full flex flex-col items-center">
         <div className="lg:rounded-xl overflow-hidden flex justify-center items-center">
           <Image
-            src="/bookbyqr2.svg"
+            src="/bookbyqr2.png"
             width={2000}
             height={200}
             alt="appointment scheduling app landing page"
