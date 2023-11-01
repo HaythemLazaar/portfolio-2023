@@ -19,22 +19,6 @@ export const metadata: Metadata = {
   title: `Haythem Lazaar Portfolio`,
   description:
     "Product Engineer. Building products for early-stage teams. Saas, Web apps...",
-  openGraph: {
-    images: "./opengraphg-image.png",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Haythem Lazaar Portfolio",
-    description:
-      "Product Engineer. Building products for early-stage teams. Saas, Web apps...",
-    creator: "@HaythemLaz",
-    images: [
-      {
-        url: "./twitter-image.png",
-        alt: "Building products for early-stage teams",
-      },
-    ],
-  },
 };
 
 export default function RootLayout({
