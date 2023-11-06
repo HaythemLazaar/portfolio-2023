@@ -6,6 +6,27 @@ export default function ColloApp() {
     <>
       <div className="flex flex-col w-full pb-20 gap-5">
         <h1 className="font-heading text-[white] text-xl lg:text-3xl ">
+          ColloHQ Group
+        </h1>
+        <h1 className="font-par text-text 3xl:text-[20px] md:text-[16px] max-w-5xl leading-7 lg:leading-10 font-light">
+          We had a lot of fun while building this project. Surely, this was
+          steep learning curve for me personnally.
+        </h1>
+      </div>
+      <div className="w-full flex flex-col gap-20 justify-center items-center">
+        <div className="flex items-center justify-center max-h-[800px] overflow-hidden rounded-2xl ">
+          <Image
+            src="/group-shot.jpeg"
+            width={2000}
+            height={200}
+            alt="Microservices Architecture. Spring Boot. Angular 16. Spring Cloud. Jhipster Gateway. Netflix Eureka Service Discovery. Jhipster Registry. Keycloack Oauth"
+            className="rounded-md lg:rounded-lg"
+          />
+        </div>
+      </div>
+      <Divider />
+      <div className="flex flex-col w-full pb-20 gap-5">
+        <h1 className="font-heading text-[white] text-xl lg:text-3xl ">
           Features Packed
         </h1>
         <h1 className="font-par text-text 3xl:text-[20px] md:text-[16px] max-w-5xl leading-7 lg:leading-10 font-light">
