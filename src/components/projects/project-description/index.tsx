@@ -15,6 +15,7 @@ export default function ProjectDescription(props: {
   summary: string[];
   link?: string;
   github?: string;
+  stack?: any[];
 }) {
   return (
     <>
@@ -41,10 +42,7 @@ export default function ProjectDescription(props: {
       </div>
       <Divider />
 
-      <div
-        className="flex flex-col lg:flex-row gap-4 lg:gap-40 3xl:text-[20px] md:text-[16px]
-    "
-      >
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-40 3xl:text-[20px] md:text-[16px]">
         <div className="flex flex-col gap-4 justify-evenly">
           <div className="flex flex-col gap-2">
             <h1 className="text-[white] font-par font-bold ">Role</h1>
@@ -60,16 +58,23 @@ export default function ProjectDescription(props: {
           </div>
         </div>
         <div className="flex flex-col gap-2 justify-between">
-          <h1 className="text-[white] font-par font-bold ">Summary</h1>
-          <h1 className="text-text font-light font-par  max-w-5xl leading-6">
-            {props.summary.map((line) => (
-              <>
-                {line}
-                <br />
-                <br />
-              </>
+          <div className="flex flex-col gap-2 justify-between">
+            <h1 className="text-[white] font-par font-bold ">Summary</h1>
+            <h1 className="text-text font-light font-par  max-w-5xl leading-6">
+              {props.summary.map((line) => (
+                <>
+                  {line}
+                  <br />
+                  <br />
+                </>
+              ))}
+            </h1>
+          </div>
+          <div className="flex gap-8 items-end text-4xl text-text">
+            {props.stack?.map((line) => (
+              <>{line}</>
             ))}
-          </h1>
+          </div>
         </div>
       </div>
     </>

@@ -2,6 +2,7 @@ import { Divider } from "@/components/divider";
 import GPR from "@/components/projects/gpr";
 import ProjectDescription from "@/components/projects/project-description";
 import Image from "next/image";
+import { SiFigma, SiAngular, SiSass, SiSpring } from "react-icons/si";
 
 export default function ProjectGPR() {
   return (
@@ -15,7 +16,12 @@ export default function ProjectGPR() {
         summary={[
           "In this project, I undertook the redesign of an existing app, known as Magistin: GPR, with a primary focus on enhancing its user interface and some backend services.",
           "The initial phase involved a cleanup of the old codebase & the UI design, followed by the creation of a fresh design system.",
-          "Leveraging cutting-edge technologies, I developed the app along with another intern using Angular & Spring boot in a microservices architecture, ensuring a modern and efficient user interface & loosely-coupled services.",
+        ]}
+        stack={[
+          <SiFigma key="1"></SiFigma>,
+          <SiSpring key="4"></SiSpring>,
+          <SiAngular key="2"></SiAngular>,
+          <SiSass key="3"></SiSass>,
         ]}
       />
       <Divider />
