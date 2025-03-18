@@ -3,7 +3,6 @@ import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import InternBadge from "./intern-badge";
 import EmailBadge from "./email-badge";
 
 export default function Hero() {
@@ -20,7 +19,6 @@ export default function Hero() {
       </div>
       <div className="flex flex-col gap-3 py-8 ">
         <EmailBadge />
-        <InternBadge />
       </div>
 
       <h1 className="relative font-heading font-semibold lg:font-black md:max-w-8xl text-4xl sm:text-5xl lg:text-7xl 3xl:text-8xl text-text z-30">
